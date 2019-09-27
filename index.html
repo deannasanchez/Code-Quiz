@@ -13,25 +13,41 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-text mr-auto">
-            <a href="http://">View Highscores</a> 
+        <span class="navbar-text mr-auto h4" id="highscores">
+            <a href="http://">View Highscores</a>
         </span>
-        <span class="navbar-text">
-            Timer:
+        <span class="navbar-text h4" id="timer">
+            Timer: 60 seconds
         </span>
     </nav>
 
 
+    <div class="container startPage hide">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+                <h1> Code Quiz</h1>
+                <br>
+                <p>
+                    This is a timed quiz. Click the start button when you are ready. You will have 60 seconds to
+                    complete the entire quiz.
+                </p>
+                <button type="button" class="btn btn-info" id="buttonStart">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-sm-12 mx-auto">
-                <h1>Code Quiz</h1>
+                <div class="h2" id="questionsArea"></div>
+                <div class="answersArea"></div>
+                <div class="answersArea"></div>
+                <div class="answersArea"></div>
+                <div class="answersArea"></div>
+                <div id="results"></div>
                 <br>
-                <p>
-                    This is a timed quiz. Click the start button when you are ready. You will have 15 seconds for each question.
-                </p>
-                <button type="button" class="btn btn-info" id="buttonStart">Start Quiz</button>
-
+                <div class="h4" id="nextbtn"></div>
+                <div id="quizGrade"></div>
             </div>
         </div>
     </div>
@@ -46,7 +62,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
